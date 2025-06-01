@@ -1,0 +1,21 @@
+ .luxury-navbar {
+  border-bottom: 4px solid;
+  border-image: linear-gradient(90deg, #b9935a 0%, #f7e07c 40%, #f7d560 60%, #b9935a 100%) 1;
+  /* Optional: subtle shadow for extra luxury effect */
+  box-shadow: 0 4px 20px rgba(247, 224, 124, 0.08);
+} 
+
+/* Nav link default style */
+.navbar-nav .nav-link {
+  color: white;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding: 8px 12px;
+  font-weight: 500;
+}
+
+/* Nav link hover effect */
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* golden yellow (Bootstrap warning color) */
+  border-bottom: 2px solid #ffc107;
+  text-decoration: none;
+}

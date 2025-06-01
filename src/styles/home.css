@@ -1,0 +1,149 @@
+
+
+/* Reduce card and image size on small screens
+ .custom-card {
+  border-radius: 10px;
+}
+
+.custom-img {
+  object-fit: cover;
+  max-height: 200px;
+}
+
+
+@media (max-width: 576px) {
+  .custom-mobile-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+  }
+
+  .custom-card {
+    max-width: 250px;
+    margin: 20px auto; 
+  }
+
+  .custom-img {
+    max-height: 150px;
+  }
+}  
+ */
+
+/* src/styles/home.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Golden frame container */
+
+/* Flex center */
+.home-container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  box-sizing: border-box; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* Responsive sizing */
+  width: 90vw;
+  max-width: 59vh; /* Keeps the same aspect on larger screens */
+  height: auto;
+  aspect-ratio: 59 / 81; /* Maintain your original 59:81 vh aspect */
+
+  margin: -22px auto 2rem;
+  padding: 1rem;
+
+  box-sizing: border-box;
+  border-radius: 16px;
+ 
+}
+
+
+@media (max-width: 768px) {
+  .home-container {
+            margin-top: 16px;
+        width: 80vw;
+        /* max-width: 64%; */
+        aspect-ratio: unset;
+        height: 62vh;
+        padding: 0.75rem;
+        border-radius: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .home-container {
+    margin-top: -22px;
+        width: 80vw;
+        max-width: 100%;
+        aspect-ratio: unset;
+        height: 70vh;
+        padding: 0.75rem;
+        border-radius: 12px;
+  }
+}
+@media (max-width: 375px) {
+  .home-container {
+    margin-top: -22px;
+        width: 70vw;
+        max-width: 100%;
+        aspect-ratio: unset;
+        height: 78vh;
+        padding: 0.75rem;
+        border-radius: 12px;
+  }
+}
+
+
+
+/* Card styling */
+.player-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Image */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Body section */
+.player-body {
+  padding: 1.5rem;
+}
+
+.p{
+  margin: 0;
+  padding: 0;
+}
+/* 
+/* Responsive design 
+@media (max-width: 768px) {
+  .player-card {
+    margin: 1rem;
+  }
+
+  .player-body {
+    padding: 1rem;
+  }
+} */
+
+

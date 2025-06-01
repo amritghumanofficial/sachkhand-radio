@@ -1,0 +1,53 @@
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* ✅ Circular Play & Mute Buttons */
+.circle-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Play Button Styles */
+.play-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+/* ✅ Mute Button Styles */
+.circle-btn:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* ✅ Hover Effects */
+.circle-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+  .circle-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
