@@ -73,14 +73,14 @@ import "../styles/navbar.css" // External css
 //           <Offcanvas.Header closeButton className="bg-dark text-white">
 //             <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">Menu</Offcanvas.Title>
 //           </Offcanvas.Header>
-          {/* <Offcanvas.Body className="bg-dark">
+          /*{ <Offcanvas.Body className="bg-dark">
             <Nav className="justify-content-start flex-grow-1 pe-3 me-auto">
               <Nav.Link as={Link} to="/" className="text-white" onClick={() => setShowOffcanvas(false)}>Home</Nav.Link>
               <Nav.Link as={Link} to="/live-kirtan" className="text-white" onClick={() => setShowOffcanvas(false)}>Live Kirtan</Nav.Link>
               <Nav.Link as={Link} to="/hukamnama" className="text-white" onClick={() => setShowOffcanvas(false)}>Hukamnama Sahib</Nav.Link>
               <Nav.Link as={Link} to="/katha" className="text-white" onClick={() => setShowOffcanvas(false)}>Katha</Nav.Link>
             </Nav>
-          </Offcanvas.Body> */}
+          </Offcanvas.Body> }*/
 
 //         </Navbar.Offcanvas>
 //       </Container>
@@ -93,7 +93,7 @@ import "../styles/navbar.css" // External css
 
 
 
-const CustomNavbar = () => {
+function CustomNavbar() {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
 
   return (
@@ -108,8 +108,7 @@ const CustomNavbar = () => {
         {/* Toggle button for Mobile */}
         <Navbar.Toggle
           aria-controls="offcanvasNavbar"
-          onClick={() => setShowOffcanvas(true)}
-        />
+          onClick={() => setShowOffcanvas(true)} />
 
         {/* ✅ Offcanvas — Only for Mobile */}
         <Navbar.Offcanvas
@@ -146,6 +145,6 @@ const CustomNavbar = () => {
       </Container>
     </Navbar>
   );
-};
+}
 
 export default CustomNavbar;

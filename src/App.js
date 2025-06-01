@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
@@ -11,16 +11,16 @@ import "./App.css";
 
 const App = () => {
    // 🔒 Disable Right Click Globally
-  // useEffect(() => {
-  //   const handleRightClick = (e) => {
-  //     e.preventDefault();
-  //   };
-  //   document.addEventListener("contextmenu", handleRightClick);
+  useEffect(() => {
+    const handleRightClick = (e) => {
+      e.preventDefault();
+    };
+    document.addEventListener("contextmenu", handleRightClick);
 
-  //   return () => {
-  //     document.removeEventListener("contextmenu", handleRightClick);
-  //   };
-  // }, []);
+    return () => {
+      document.removeEventListener("contextmenu", handleRightClick);
+    };
+  }, []);
   return (
     <>
      <div className="app-container">
