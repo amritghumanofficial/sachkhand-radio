@@ -46,7 +46,7 @@
 // export default Home;
 
 // src/pages/Home.jsx
-import React, { useRef, useState } from "react";
+import React, { useRef} from "react";
 import RadioPlayer from "../components/RadioPlayer";
 import "../styles/home.css"; // External styles
 import goldentemple from "../assets/golden-temple.png";
